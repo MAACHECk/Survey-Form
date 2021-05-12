@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <header>
+            <h1>Apex Legends Survey</h1>
+            <p><em>Help us improve legend balance!</em></p>
+        </header>
+        <form>
+            <div>
+                <label for="username">Username</label>
+                <input id="username" type="text" placeholder="Enter your Username" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label for="age">Age (optional)</label>
+                <input id="age" type="number" placeholder="Age" min="1" max="99">
+            </div>
+            <div>
+                <p>What rank are you</p>
+                <select id="rank">
+                    <option value=""disabled selected>Select your rank</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                    <option value="platinum">Platinum</option>
+                    <option value="diamond">Diamond</option>
+                    <option value="master">Master</option>
+                    <option value="apex-predator">Apex Predator</option>
+                </select>
+            </div>
+            <div>
+                <p>What do you think of the current legend balance?</p>
+                <label for="good">
+                    <input id="good" type="radio" name="balance-group" checked>Good
+                </label>
+                <label for="bad">
+                    <input id="bad" type="radio" name="balance-group">Bad
+                </label>
+                <label for="idk">
+                    <input id="idk" type="radio" name="balance-group">I don't know
+                </label>
+            </div>
+            <div>
+                <p>Who is your favorite legend?</p>
+                <select id="legend">
+                    <option value="">Select your favorite Legend</option>
+        </form>
+
+    </body>
+    </html>
