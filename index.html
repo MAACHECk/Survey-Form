@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body class="container">
         <header>
-            <h1>Programming Survey Form</h1>
-            <p><em>Which languages are you learning</em></p>
+            <h1 id="title" class="text-center">Programming Survey Form</h1>
+            <p id="description" class="text-center"><em>Which languages are you learning</em></p>
         </header>
-        <form>
-            <div>
-                <label for="username">Username</label>
-                <input id="username" type="text" placeholder="Enter your Username" required>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Username</label>
+                <input id="name" type="text" placeholder="Enter your name" class="form-control" required>
             </div>
-            <div>
-                <label for="email">Email</label>
-                <input id="email" type="email" placeholder="Enter your email" required>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input id="email" type="email" placeholder="Enter your email" class="form-control" required>
             </div>
-            <div>
-                <label for="age">Age (optional)</label>
-                <input id="age" type="number" placeholder="Age" min="1" max="99">
+            <div class="form-group">
+                <label for="number" id="number-label">Age (optional)</label>
+                <input id="number" type="number" placeholder="Age" min="1" max="99" class="form-control">
             </div>
-            <div>
+            <div class="form-group">
                 <p>At what age did you start learning programming?</p>
                 <label for="teen">
-                    <input id="teen" type="radio" name="age-group" checked>Age 10 - 19
+                    <input id="teen" type="radio" name="age-group" class="form-control" checked>Age 10 - 19
                 </label>
                 <label for="twenties">
                     <input id="twenties" type="radio" name="age-group">Age 20 - 29
@@ -38,9 +39,9 @@
                     <input id="fifty-plus" type="radio" name="age-group">Age 50+
                 </label>
             </div>
-            <div>
+            <div class="form-group">
                 <p>Which option best describes your current status?</p>
-                <select id="rank">
+                <select id="dropdown" class="form-control">
                     <option value=""disabled selected>Select current status</option>
                     <option value="student">Student</option>
                     <option value="self-learner">Self Learner (Unemployed)</option>
@@ -48,40 +49,39 @@
                     <option value="senior">Senior (Employed)</option>
                 </select>
             </div>
-            <div>
+            <div class="form-group">
                 <p>Which languages are you learning/using?</p>
                     <label for="php">
-                        <input id="php" type="checkbox" name="language-group"> php
+                        <input id="php" type="checkbox" value="php" name="language-group"> PHP
                     </label>
                     <label for="java">
-                        <input id="java" type="checkbox" name="language-group"> Java
+                        <input id="java" type="checkbox" value="java" name="language-group"> Java
                     </label>
                     <label for="javascript">
-                        <input id="javascript" type="checkbox" name="language-group"> JavaScript
+                        <input id="javascript" type="checkbox" value="javascript" name="language-group"> JavaScript
                     </label>
                     <label for="python">
-                        <input id="python" type="checkbox" name="language-group"> Python
+                        <input id="python" type="checkbox" value="python" name="language-group"> Python
                     </label>
                     <label for="c">
-                        <input id="c" type="checkbox" name="language-group"> C 
+                        <input id="c" type="checkbox" value="c" name="language-group"> C 
                     </label>
                     <label for="c#">
-                        <input id="c#" type="checkbox" name="language-group"> C# 
+                        <input id="c#" type="checkbox" value="c#" name="language-group"> C# 
                     </label>
                     <label for="c++">
-                        <input id="c++" type="checkbox" name="language-group"> C++
+                        <input id="c++" type="checkbox" value="c++" name="language-group"> C++
                     </label>
                     <label for="other">
-                        <input id="other" type="checkbox" name="language-group"> other
+                        <input id="other" type="checkbox" value="other" name="language-group"> other
                     </label>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="suggestions"> Any comments or suggestions?</label>
-                        <textarea id="suggestions" rows="5" cols="50">Enter your comments here...</textarea>
+                        <textarea id="suggestions" rows="5" cols="50" class="text-box">Enter your comments here...</textarea>
                 </div>
-                <div>
+                <div class="form-group">
                     <button id="submit" type="submit">Submit</button>
         </form>
-
     </body>
     </html>
