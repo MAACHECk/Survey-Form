@@ -4,8 +4,8 @@
     </head>
     <body>
         <header>
-            <h1>Apex Legends Survey</h1>
-            <p><em>Help us improve legend balance!</em></p>
+            <h1>Programming Survey Form</h1>
+            <p><em>Which languages are you learning</em></p>
         </header>
         <form>
             <div>
@@ -21,34 +21,66 @@
                 <input id="age" type="number" placeholder="Age" min="1" max="99">
             </div>
             <div>
-                <p>What rank are you</p>
+                <p>At what age did you start learning programming?</p>
+                <label for="teen">
+                    <input id="teen" type="radio" name="age-group" checked>Age 10 - 19
+                </label>
+                <label for="twenties">
+                    <input id="twenties" type="radio" name="age-group">Age 20 - 29
+                </label>
+                <label for="thirties">
+                    <input id="thirties" type="radio" name="age-group">Age 30 - 39
+                </label>
+                <label for="forties">
+                    <input id="forties" type="radio" name="age-group">Age 40 - 49
+                </label>
+                <label for="fifty-plus">
+                    <input id="fifty-plus" type="radio" name="age-group">Age 50+
+                </label>
+            </div>
+            <div>
+                <p>Which option best describes your current status?</p>
                 <select id="rank">
-                    <option value=""disabled selected>Select your rank</option>
-                    <option value="bronze">Bronze</option>
-                    <option value="silver">Silver</option>
-                    <option value="gold">Gold</option>
-                    <option value="platinum">Platinum</option>
-                    <option value="diamond">Diamond</option>
-                    <option value="master">Master</option>
-                    <option value="apex-predator">Apex Predator</option>
+                    <option value=""disabled selected>Select current status</option>
+                    <option value="student">Student</option>
+                    <option value="self-learner">Self Learner (Unemployed)</option>
+                    <option value="junior">Junior (Employed)</option>
+                    <option value="senior">Senior (Employed)</option>
                 </select>
             </div>
             <div>
-                <p>What do you think of the current legend balance?</p>
-                <label for="good">
-                    <input id="good" type="radio" name="balance-group" checked>Good
-                </label>
-                <label for="bad">
-                    <input id="bad" type="radio" name="balance-group">Bad
-                </label>
-                <label for="idk">
-                    <input id="idk" type="radio" name="balance-group">I don't know
-                </label>
-            </div>
-            <div>
-                <p>Who is your favorite legend?</p>
-                <select id="legend">
-                    <option value="">Select your favorite Legend</option>
+                <p>Which languages are you learning/using?</p>
+                    <label for="php">
+                        <input id="php" type="checkbox" name="language-group"> php
+                    </label>
+                    <label for="java">
+                        <input id="java" type="checkbox" name="language-group"> Java
+                    </label>
+                    <label for="javascript">
+                        <input id="javascript" type="checkbox" name="language-group"> JavaScript
+                    </label>
+                    <label for="python">
+                        <input id="python" type="checkbox" name="language-group"> Python
+                    </label>
+                    <label for="c">
+                        <input id="c" type="checkbox" name="language-group"> C 
+                    </label>
+                    <label for="c#">
+                        <input id="c#" type="checkbox" name="language-group"> C# 
+                    </label>
+                    <label for="c++">
+                        <input id="c++" type="checkbox" name="language-group"> C++
+                    </label>
+                    <label for="other">
+                        <input id="other" type="checkbox" name="language-group"> other
+                    </label>
+                </div>
+                <div>
+                    <label for="suggestions"> Any comments or suggestions?</label>
+                        <textarea id="suggestions" rows="5" cols="50">Enter your comments here...</textarea>
+                </div>
+                <div>
+                    <button id="submit" type="submit">Submit</button>
         </form>
 
     </body>
